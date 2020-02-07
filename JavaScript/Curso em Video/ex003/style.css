@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+body {
+    background-color: #3e2d41e1;
+    color: #ffffffee;
+    font: normal 20pt Arial;
+}
+
+div#area {
+    width: 400px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background-color: #ffffffee;
+    color: #303030;
+}

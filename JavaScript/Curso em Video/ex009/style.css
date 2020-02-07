@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+body {
+  background: rgb(74, 118, 238);
+  color: aliceblue;
+  font: normal 15pt Arial;
+  text-align: center;
+}
+
+header {
+  font-weight: bold;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 2px;
+  margin-bottom: 50px;
+}
+
+section {
+  margin: auto;
+  background: rgba(255, 255, 255, 0.9);
+  color: #303030;
+  width: 650px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 4px;
+  text-align: justify;
+}
+
+footer {
+  font-style: italic;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 2px;
+  margin-top: 90px;
+}
+
+div {
+  padding: 5px;
+  text-align: center;
+}
+
+input {
+  padding: 2px;
+}
+
+input#int {
+  margin-left: 13px;
+}
+
+input#end {
+  margin-left: 27px;
+}
+
+input#add {
+  margin-left: 5px;
+}
+
+input#cont {
+  width: 75px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+p#res {
+  text-align: center;
+}

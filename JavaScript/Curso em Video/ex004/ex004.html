@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="calculadora">
+      <h1>Calculadora</h1>
+      <div id="soma">
+        <h2>Soma</h2>
+        <p>
+          <input type="number" name="num1" id="n1" />
+          +
+          <input type="number" name="num2" id="n2" />
+          <input type="button" value="=" id="igual" onclick="somar()" />
+          <output name="res" for="=">...</output>
+        </p>
+      </div>
+      <div id="sub">
+        <h2>Subtração</h2>
+        <p>
+          <input type="number" name="num1" id="n1" />
+          -
+          <input type="number" name="num2" id="n2" />
+          <input type="button" value="=" id="igual" onclick="subtrair()" />
+          <output name="res" for="=">...</output>
+        </p>
+      </div>
+      <div id="mul">
+        <h2>Multuplicação</h2>
+        <p>
+          <input type="number" name="num1" id="n1" />
+          *
+          <input type="number" name="num2" id="n2" />
+          <input type="button" value="=" id="igual" onclick="multiplicar()" />
+          <output name="res" for="=">...</output>
+        </p>
+      </div>
+      <div id="div">
+        <h2>Divisão</h2>
+        <p>
+          <input type="number" name="num1" id="n1" />
+          /
+          <input type="number" name="num2" id="n2" />
+          <input type="button" value="=" id="igual" onclick="dividir()" />
+          <output name="res" for="=">...</output>
+        </p>
+      </div>
+      <div id="mod">
+        <h2>Resto da divisão</h2>
+        <p>
+          <input type="number" name="num1" id="n1" />
+          %
+          <input type="number" name="num2" id="n2" />
+          <input type="button" value="=" id="igual" onclick="mod()" />
+          <output name="res" for="=">...</output>
+        </p>
+      </div>
+      <div id="exp">
+        <h2>Exponenciação</h2>
+        <p>
+          <input type="number" name="num1" id="n1" />
+          ^
+          <input type="number" name="num2" id="n2" />
+          <input type="button" value="=" id="igual" onclick="exp()" />
+          <output name="res" for="=">...</output>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

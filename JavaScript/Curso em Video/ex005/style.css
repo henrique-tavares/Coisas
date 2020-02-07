@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body {
+  background-color: #3e2d41e1;
+  color: #ffffffee;
+  font: normal 18pt Arial;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 100px;
+}
+
+input {
+  padding: 2px;
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 20px;
+}
+
+input#button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+}

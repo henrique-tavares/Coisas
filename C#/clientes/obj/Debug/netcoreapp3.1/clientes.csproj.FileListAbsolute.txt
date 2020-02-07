@@ -1,0 +1,14 @@
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/obj/Debug/netcoreapp3.1/clientes.csprojAssemblyReference.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/obj/Debug/netcoreapp3.1/clientes.AssemblyInfoInputs.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/obj/Debug/netcoreapp3.1/clientes.AssemblyInfo.cs
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/bin/Debug/netcoreapp3.1/clientes
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/bin/Debug/netcoreapp3.1/clientes.deps.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/bin/Debug/netcoreapp3.1/clientes.runtimeconfig.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/bin/Debug/netcoreapp3.1/clientes.runtimeconfig.dev.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/bin/Debug/netcoreapp3.1/clientes.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/bin/Debug/netcoreapp3.1/clientes.pdb
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/obj/Debug/netcoreapp3.1/clientes.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/obj/Debug/netcoreapp3.1/clientes.pdb
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/bin/Debug/netcoreapp3.1/componentes.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/bin/Debug/netcoreapp3.1/componentes.pdb
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/obj/Debug/netcoreapp3.1/clientes.csproj.CopyComplete

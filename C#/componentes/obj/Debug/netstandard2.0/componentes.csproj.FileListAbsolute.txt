@@ -1,0 +1,8 @@
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/componentes/bin/Debug/netstandard2.0/componentes.deps.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/componentes/bin/Debug/netstandard2.0/componentes.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/componentes/bin/Debug/netstandard2.0/componentes.pdb
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/componentes/obj/Debug/netstandard2.0/componentes.csprojAssemblyReference.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/componentes/obj/Debug/netstandard2.0/componentes.AssemblyInfoInputs.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/componentes/obj/Debug/netstandard2.0/componentes.AssemblyInfo.cs
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/componentes/obj/Debug/netstandard2.0/componentes.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/componentes/obj/Debug/netstandard2.0/componentes.pdb

@@ -1,0 +1,11 @@
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/obj/Debug/netcoreapp3.1/loops.csprojAssemblyReference.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/obj/Debug/netcoreapp3.1/loops.AssemblyInfoInputs.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/obj/Debug/netcoreapp3.1/loops.AssemblyInfo.cs
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/bin/Debug/netcoreapp3.1/loops
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/bin/Debug/netcoreapp3.1/loops.deps.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/bin/Debug/netcoreapp3.1/loops.runtimeconfig.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/bin/Debug/netcoreapp3.1/loops.runtimeconfig.dev.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/bin/Debug/netcoreapp3.1/loops.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/bin/Debug/netcoreapp3.1/loops.pdb
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/obj/Debug/netcoreapp3.1/loops.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/loops/obj/Debug/netcoreapp3.1/loops.pdb

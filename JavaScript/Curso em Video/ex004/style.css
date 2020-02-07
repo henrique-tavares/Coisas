@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {
+  background-color: #3e2d41e1;
+  color: #ffffffee;
+  font: normal 18pt Arial;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 20pt;
+  margin-left: 20px;
+  margin-bottom: -20px;
+  margin-top: 50px;
+}
+
+input {
+  width: 100px;
+  padding: 5px;
+}
+
+input#igual {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}

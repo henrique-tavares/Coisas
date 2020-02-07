@@ -1,0 +1,11 @@
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/bin/Debug/netcoreapp3.1/funcoes
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/bin/Debug/netcoreapp3.1/funcoes.deps.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/bin/Debug/netcoreapp3.1/funcoes.runtimeconfig.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/bin/Debug/netcoreapp3.1/funcoes.runtimeconfig.dev.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/bin/Debug/netcoreapp3.1/funcoes.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/bin/Debug/netcoreapp3.1/funcoes.pdb
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/obj/Debug/netcoreapp3.1/funcoes.csprojAssemblyReference.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/obj/Debug/netcoreapp3.1/funcoes.AssemblyInfoInputs.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/obj/Debug/netcoreapp3.1/funcoes.AssemblyInfo.cs
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/obj/Debug/netcoreapp3.1/funcoes.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/funcoes/obj/Debug/netcoreapp3.1/funcoes.pdb

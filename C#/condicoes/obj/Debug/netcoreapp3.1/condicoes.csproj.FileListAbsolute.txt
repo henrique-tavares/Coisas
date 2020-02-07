@@ -1,0 +1,11 @@
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/bin/Debug/netcoreapp3.1/condicoes
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/bin/Debug/netcoreapp3.1/condicoes.deps.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/bin/Debug/netcoreapp3.1/condicoes.runtimeconfig.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/bin/Debug/netcoreapp3.1/condicoes.runtimeconfig.dev.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/bin/Debug/netcoreapp3.1/condicoes.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/bin/Debug/netcoreapp3.1/condicoes.pdb
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/obj/Debug/netcoreapp3.1/condicoes.csprojAssemblyReference.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/obj/Debug/netcoreapp3.1/condicoes.AssemblyInfoInputs.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/obj/Debug/netcoreapp3.1/condicoes.AssemblyInfo.cs
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/obj/Debug/netcoreapp3.1/condicoes.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/condicoes/obj/Debug/netcoreapp3.1/condicoes.pdb

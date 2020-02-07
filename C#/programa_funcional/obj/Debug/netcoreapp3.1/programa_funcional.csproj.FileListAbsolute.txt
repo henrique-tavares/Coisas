@@ -1,0 +1,11 @@
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/bin/Debug/netcoreapp3.1/programa_funcional
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/bin/Debug/netcoreapp3.1/programa_funcional.deps.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/bin/Debug/netcoreapp3.1/programa_funcional.runtimeconfig.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/bin/Debug/netcoreapp3.1/programa_funcional.runtimeconfig.dev.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/bin/Debug/netcoreapp3.1/programa_funcional.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/bin/Debug/netcoreapp3.1/programa_funcional.pdb
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/obj/Debug/netcoreapp3.1/programa_funcional.csprojAssemblyReference.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/obj/Debug/netcoreapp3.1/programa_funcional.AssemblyInfoInputs.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/obj/Debug/netcoreapp3.1/programa_funcional.AssemblyInfo.cs
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/obj/Debug/netcoreapp3.1/programa_funcional.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/programa_funcional/obj/Debug/netcoreapp3.1/programa_funcional.pdb

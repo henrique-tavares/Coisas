@@ -1,0 +1,11 @@
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/obj/Debug/netcoreapp3.1/collections.csprojAssemblyReference.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/obj/Debug/netcoreapp3.1/collections.AssemblyInfoInputs.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/obj/Debug/netcoreapp3.1/collections.AssemblyInfo.cs
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/bin/Debug/netcoreapp3.1/collections
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/bin/Debug/netcoreapp3.1/collections.deps.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/bin/Debug/netcoreapp3.1/collections.runtimeconfig.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/bin/Debug/netcoreapp3.1/collections.runtimeconfig.dev.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/bin/Debug/netcoreapp3.1/collections.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/bin/Debug/netcoreapp3.1/collections.pdb
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/obj/Debug/netcoreapp3.1/collections.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/c#/collections/obj/Debug/netcoreapp3.1/collections.pdb

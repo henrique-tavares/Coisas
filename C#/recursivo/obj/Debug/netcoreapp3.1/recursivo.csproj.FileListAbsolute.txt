@@ -1,0 +1,11 @@
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/bin/Debug/netcoreapp3.1/recursivo
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/bin/Debug/netcoreapp3.1/recursivo.deps.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/bin/Debug/netcoreapp3.1/recursivo.runtimeconfig.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/bin/Debug/netcoreapp3.1/recursivo.runtimeconfig.dev.json
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/bin/Debug/netcoreapp3.1/recursivo.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/bin/Debug/netcoreapp3.1/recursivo.pdb
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/obj/Debug/netcoreapp3.1/recursivo.csprojAssemblyReference.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/obj/Debug/netcoreapp3.1/recursivo.AssemblyInfoInputs.cache
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/obj/Debug/netcoreapp3.1/recursivo.AssemblyInfo.cs
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/obj/Debug/netcoreapp3.1/recursivo.dll
+/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/recursivo/obj/Debug/netcoreapp3.1/recursivo.pdb

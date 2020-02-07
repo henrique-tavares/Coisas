@@ -1,0 +1,86 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "componentes/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/componentes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/componentes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "componentes/1.0.0": {
+      "type": "project",
+      "path": "../componentes/componentes.csproj",
+      "msbuildProject": "../componentes/componentes.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "componentes >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/henrique/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/clientes.csproj",
+      "projectName": "clientes",
+      "projectPath": "/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/clientes.csproj",
+      "packagesPath": "/home/henrique/.nuget/packages/",
+      "outputPath": "/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/clientes/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/henrique/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/componentes/componentes.csproj": {
+              "projectPath": "/mnt/c/Users/rickt/Documents/GitHub/Coisas/C#/componentes/componentes.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
