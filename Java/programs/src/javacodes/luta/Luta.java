@@ -8,59 +8,6 @@ public class Luta
     private int rounds;
     private boolean aprovada;
 
-
-    public Lutador getdesafiado() 
-    {
-        return this.desafiado;
-    }
-
-    public void setDesafiado(Lutador desafiado) 
-    {
-        this.desafiado = desafiado;
-    }
-
-    public Lutador getDesafiante() 
-    {
-        return this.desafiante;
-    }
-
-    public void setDesafiante(Lutador desafiante) 
-    {
-        this.desafiante = desafiante;
-    }
-
-    public int getRounds() 
-    {
-        return this.rounds;
-    }
-
-    public void setRounds(int rounds) 
-    {
-        this.rounds = rounds;
-    }
-
-    public boolean isAprovada() 
-    {
-        return this.aprovada;
-    }
-
-    public boolean getAprovada() 
-    {
-        return this.aprovada;
-    }
-
-    public void setAprovada(boolean aprovada) 
-    {
-        this.aprovada = aprovada;
-    }
-
-    public Luta()
-    {
-        this.desafiante = null;
-        this.desafiado = null;
-        this.aprovada = false;
-    }
-
     public void marcarLuta(Lutador l1, Lutador l2, int rounds)
     {
         if (l1.equals(l2))
@@ -163,4 +110,55 @@ public class Luta
         System.out.println("");
     }
 
+    public Luta()
+    {
+        this.desafiante = null;
+        this.desafiado = null;
+        this.aprovada = false;
+    }
+
+    public Lutador getdesafiado() 
+    {
+        return this.desafiado;
+    }
+
+    public void setDesafiado(Lutador desafiado) 
+    {
+        this.desafiado = desafiado;
+    }
+
+    public Lutador getDesafiante() 
+    {
+        return this.desafiante;
+    }
+
+    public void setDesafiante(Lutador desafiante) 
+    {
+        this.desafiante = desafiante;
+    }
+
+    public int getRounds() 
+    {
+        return this.rounds;
+    }
+
+    public void setRounds(int rounds) 
+    {
+        this.rounds = rounds;
+    }
+
+    public boolean isAprovada() 
+    {
+        return this.aprovada;
+    }
+
+    public boolean getAprovada() 
+    {
+        return this.aprovada;
+    }
+
+    public void setAprovada(boolean aprovada) 
+    {
+        this.aprovada = aprovada;
+    }
 }

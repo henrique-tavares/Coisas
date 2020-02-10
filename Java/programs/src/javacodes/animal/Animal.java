@@ -9,6 +9,19 @@ public abstract class Animal
     public abstract void alimentar();
     public abstract void emitirSom();
 
+    /**
+     * 
+     * @param peso
+     * @param idade
+     * @param membros
+     */
+    protected Animal(double peso, int idade, int membros)
+    {
+        this.peso = peso;
+        this.idade = idade;
+        this.membros = membros;
+    }
+
     public double getPeso()
     {
         return peso;
@@ -36,19 +49,6 @@ public abstract class Animal
 
     public void setMembros(int membros)
     {
-        this.membros = membros;
-    }
-
-    /**
-     * 
-     * @param peso
-     * @param idade
-     * @param membros
-     */
-    protected Animal(double peso, int idade, int membros)
-    {
-        this.peso = peso;
-        this.idade = idade;
         this.membros = membros;
     }
 }

@@ -22,16 +22,6 @@ public class Reptil extends Animal
         System.out.println("Som de réptil.");
     }
 
-    public String getCorEscama()
-    {
-        return corEscama;
-    }
-
-    public void setCorEscama(String corEscama)
-    {
-        this.corEscama = corEscama;
-    }
-
     /**
      * 
      * @param peso
@@ -45,4 +35,13 @@ public class Reptil extends Animal
         this.corEscama = corEscama;
     }
 
+    public String getCorEscama()
+    {
+        return corEscama;
+    }
+
+    public void setCorEscama(String corEscama)
+    {
+        this.corEscama = corEscama;
+    }
 }

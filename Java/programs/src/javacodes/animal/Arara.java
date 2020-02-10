@@ -1,7 +1,13 @@
 package javacodes.animal;
 
-public final class Arara extends Ave
+public final class Arara extends Ave implements AnimalDomesticado
 {
+    @Override
+    public void levarVeterinario()
+    {
+        System.out.println("A arara foi no veterinário.");
+    }
+    
     /**
      * 
      * @param peso

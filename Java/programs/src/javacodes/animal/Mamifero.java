@@ -22,16 +22,6 @@ public class Mamifero extends Animal
         System.out.println("Som de mamífero.");
     }
 
-    public String getCorPelo()
-    {
-        return corPelo;
-    }
-
-    public void setCorPelo(String corPelo)
-    {
-        this.corPelo = corPelo;
-    }
-
     /**
      * 
      * @param peso
@@ -42,6 +32,16 @@ public class Mamifero extends Animal
     public Mamifero(double peso, int idade, int membros, String corPelo)
     {
         super(peso, idade, membros);
+        this.corPelo = corPelo;
+    }
+
+    public String getCorPelo()
+    {
+        return corPelo;
+    }
+
+    public void setCorPelo(String corPelo)
+    {
         this.corPelo = corPelo;
     }
 }

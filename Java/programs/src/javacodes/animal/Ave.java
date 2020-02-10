@@ -27,16 +27,6 @@ public class Ave extends Animal
         System.out.println("Voando.");
     }
     
-    public String getCorPena()
-    {
-        return corPena;
-    }
-
-    public void setCorPena(String corPena)
-    {
-        this.corPena = corPena;
-    }
-
     /**
      * 
      * @param peso
@@ -47,6 +37,16 @@ public class Ave extends Animal
     public Ave(double peso, int idade, int membros, String corPena)
     {
         super(peso, idade, membros);
+        this.corPena = corPena;
+    }
+
+    public String getCorPena()
+    {
+        return corPena;
+    }
+
+    public void setCorPena(String corPena)
+    {
         this.corPena = corPena;
     }
 }

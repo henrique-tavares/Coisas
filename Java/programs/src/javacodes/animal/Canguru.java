@@ -24,5 +24,4 @@ public final class Canguru extends Mamifero
     {
         super(peso, idade, 4, corPelo);
     }
-
 }

@@ -1,6 +1,6 @@
 package javacodes.animal;
 
-public class Peixe extends Animal
+public class Peixe extends Animal implements AnimalDomesticado
 {
     private String corEscama;
 
@@ -27,14 +27,10 @@ public class Peixe extends Animal
         System.out.println("...");
     }
 
-    public String getCorEscama()
+    @Override
+    public void levarVeterinario()
     {
-        return corEscama;
-    }
-
-    public void setCorEscama(String corEscama)
-    {
-        this.corEscama = corEscama;
+        System.out.println("O peixe foi no veterinário.");
     }
 
     /**
@@ -50,5 +46,13 @@ public class Peixe extends Animal
         this.corEscama = corEscama;
     }
 
-    
+    public String getCorEscama()
+    {
+        return corEscama;
+    }
+
+    public void setCorEscama(String corEscama)
+    {
+        this.corEscama = corEscama;
+    }
 }

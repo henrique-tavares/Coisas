@@ -12,6 +12,66 @@ public class Lutador
     private int derrotas;
     private int empates;
 
+    public void apresentar()
+    {
+        System.out.println("-------------------------------");
+        System.out.println("Lutador: " + this.getNome());
+        System.out.println("Origem: " + this.getNacionalidade());
+        System.out.println(this.getIdade() + " anos");
+        System.out.println(this.getAltura() + " m de idade");
+        System.out.println("Pesando " + this.getPeso() + " Kg");
+        System.out.println("Ganhou: " + this.getVitorias() + " lutas");
+        System.out.println("Perdeu: " + this.getDerrotas() + " lutas");
+        System.out.println("Empatou: " + this.getEmpates() + " lutas");
+    }
+
+    public void status()
+    {
+        System.out.println(this.getNome() + " é um peso " + this.getCategoria());
+        System.out.println(this.getVitorias() + " vitórias");
+        System.out.println(this.getDerrotas() + " derrotas");
+        System.out.println(this.getEmpates() + " empates");
+    }
+
+    public void ganharLuta()
+    {
+        this.setVitorias(this.getVitorias() + 1);
+    }
+
+    public void perderLuta()
+    {
+        this.setDerrotas(this.getDerrotas() + 1);
+    }
+
+    public void empatarLuta()
+    {
+        this.setEmpates(this.getEmpates() + 1);
+    }
+
+    /**
+     * 
+     * @param nome Nome do lutador
+     * @param nacionalidade País de origem do lutador
+     * @param idade Idade do lutador
+     * @param altura Altura do lutador
+     * @param peso Peso do lutador
+     * @param vitorias Quantitade de vezes em que o lutador ganhou
+     * @param derrotas Quantidade de vezes em que o lutador perdeu
+     * @param empates Quantidade de vezes em que o lutador empatou
+     */
+    public Lutador(String nome, String nacionalidade, int idade, double altura, double peso, int vitorias, int derrotas, int empates) 
+    {
+        this.nome = nome;
+        this.nacionalidade = nacionalidade;
+        this.idade = idade;
+        this.altura = altura;
+        this.setPeso(peso);
+        this.vitorias = vitorias;
+        this.derrotas = derrotas;
+        this.empates = empates;
+    }
+
+    public Lutador() { }
 
     public String getNome() 
     {
@@ -110,68 +170,5 @@ public class Lutador
     public void setEmpates(int empates) 
     {
         this.empates = empates;
-    }
-
-    /**
-     * 
-     * @param nome Nome do lutador
-     * @param nacionalidade País de origem do lutador
-     * @param idade Idade do lutador
-     * @param altura Altura do lutador
-     * @param peso Peso do lutador
-     * @param vitorias Quantitade de vezes em que o lutador ganhou
-     * @param derrotas Quantidade de vezes em que o lutador perdeu
-     * @param empates Quantidade de vezes em que o lutador empatou
-     */
-    public Lutador(String nome, String nacionalidade, int idade, double altura, double peso, int vitorias, int derrotas, int empates) 
-    {
-        this.nome = nome;
-        this.nacionalidade = nacionalidade;
-        this.idade = idade;
-        this.altura = altura;
-        this.setPeso(peso);
-        this.vitorias = vitorias;
-        this.derrotas = derrotas;
-        this.empates = empates;
-    }
-
-    public Lutador() 
-    {
-    }
-
-    public void apresentar()
-    {
-        System.out.println("-------------------------------");
-        System.out.println("Lutador: " + this.getNome());
-        System.out.println("Origem: " + this.getNacionalidade());
-        System.out.println(this.getIdade() + " anos");
-        System.out.println(this.getAltura() + " m de idade");
-        System.out.println("Pesando " + this.getPeso() + " Kg");
-        System.out.println("Ganhou: " + this.getVitorias() + " lutas");
-        System.out.println("Perdeu: " + this.getDerrotas() + " lutas");
-        System.out.println("Empatou: " + this.getEmpates() + " lutas");
-    }
-
-    public void status()
-    {
-        System.out.println(this.getNome() + " é um peso " + this.getCategoria());
-        System.out.println(this.getVitorias() + " vitórias");
-        System.out.println(this.getDerrotas() + " derrotas");
-        System.out.println(this.getEmpates() + " empates");
-    }
-
-    public void ganharLuta()
-    {
-        this.setVitorias(this.getVitorias() + 1);
-    }
-
-    public void perderLuta()
-    {
-        this.setDerrotas(this.getDerrotas() + 1);
-    }
-
-    public void empatarLuta()
-    {
-        this.setEmpates(this.getEmpates() + 1);
     }
 }

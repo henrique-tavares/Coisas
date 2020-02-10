@@ -1,6 +1,6 @@
 package javacodes.animal;
 
-public final class Cachorro extends Lobo
+public final class Cachorro extends Lobo implements AnimalDomesticado, AnimalEstimacao
 {
 
     @Override
@@ -52,7 +52,25 @@ public final class Cachorro extends Lobo
             else System.out.println("Deitou!");
         }
     }
-    
+
+    @Override
+    public void brincar()
+    {
+        System.out.println("O cachorro ficou mais feliz depois de brincar");
+    }
+
+    @Override
+    public void levarPassear()
+    {
+        System.out.println("O cachorro ficou mais tranquilo depois de passear");
+    }
+
+    @Override
+    public void levarVeterinario()
+    {
+        System.out.println("O cachorro foi no vetrinário");
+    }
+
     /**
      * 
      * @param peso

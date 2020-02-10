@@ -8,70 +8,6 @@ public class ControleRemoto implements Controlador
     private boolean mudo;
     private int altVolume;
 
-
-    public int getVolume() 
-    {
-        return this.volume;
-    }
-
-    public void setVolume(int volume) 
-    {
-        this.volume = volume;
-    }
-
-    public boolean isLigado() 
-    {
-        return this.ligado;
-    }
-
-    public boolean getLigado() 
-    {
-        return this.ligado;
-    }
-
-    public void setLigado(boolean ligado) 
-    {
-        this.ligado = ligado;
-    }
-
-    public boolean isTocando() 
-    {
-        return this.tocando;
-    }
-
-    public boolean getTocando() 
-    {
-        return this.tocando;
-    }
-
-    public void setTocando(boolean tocando) 
-    {
-        this.tocando = tocando;
-    }
-
-    public boolean isMudo() 
-    {
-        return this.mudo;
-    }
-
-    public boolean getMudo() 
-    {
-        return this.mudo;
-    }
-
-    public void setMudo(boolean mudo) 
-    {
-        this.mudo = mudo;
-    }
-    
-    public ControleRemoto() 
-    {
-        this.setVolume(50);
-        this.setLigado(false);
-        this.setTocando(false);
-        this.setMudo(false);
-    }
-
     @Override
     public void ligar()
     {
@@ -156,5 +92,68 @@ public class ControleRemoto implements Controlador
     {
         if (this.isLigado() && this.isTocando())
             this.setTocando(false);
+    }
+
+    public ControleRemoto() 
+    {
+        this.setVolume(50);
+        this.setLigado(false);
+        this.setTocando(false);
+        this.setMudo(false);
+    }
+
+    public int getVolume() 
+    {
+        return this.volume;
+    }
+
+    public void setVolume(int volume) 
+    {
+        this.volume = volume;
+    }
+
+    public boolean isLigado() 
+    {
+        return this.ligado;
+    }
+
+    public boolean getLigado() 
+    {
+        return this.ligado;
+    }
+
+    public void setLigado(boolean ligado) 
+    {
+        this.ligado = ligado;
+    }
+
+    public boolean isTocando() 
+    {
+        return this.tocando;
+    }
+
+    public boolean getTocando() 
+    {
+        return this.tocando;
+    }
+
+    public void setTocando(boolean tocando) 
+    {
+        this.tocando = tocando;
+    }
+
+    public boolean isMudo() 
+    {
+        return this.mudo;
+    }
+
+    public boolean getMudo() 
+    {
+        return this.mudo;
+    }
+
+    public void setMudo(boolean mudo) 
+    {
+        this.mudo = mudo;
     }
 }

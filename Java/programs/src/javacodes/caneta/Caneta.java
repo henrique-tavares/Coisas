@@ -8,6 +8,15 @@ public class Caneta
     private double carga;
     private boolean tampada;
 
+    public void getStatus()
+    {
+        System.out.println("Modelo: " + this.getModelo());
+        System.out.println("Cor: " + this.getCor());
+        System.out.println("Ponta: " + this.getPonta());
+        System.out.println("Carga: " + this.getCarga());
+        System.out.println("Tampada? " + this.getTampada());
+    }
+
     public String getModelo()
     {
         return this.modelo;
@@ -62,14 +71,5 @@ public class Caneta
     {
         this.setCarga(100.0);
         this.setTampada(true);
-    }
-
-    public void getStatus()
-    {
-        System.out.println("Modelo: " + this.getModelo());
-        System.out.println("Cor: " + this.getCor());
-        System.out.println("Ponta: " + this.getPonta());
-        System.out.println("Carga: " + this.getCarga());
-        System.out.println("Tampada? " + this.getTampada());
     }
 }
