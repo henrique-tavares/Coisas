@@ -1,21 +1,22 @@
 package javacodes.recursivo;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class Recursivo
 {
-    public static BigInteger fatorial(long num)
+    public static BigDecimal fatorial(long num)
     {
-        // BigInteger total = new BigInteger("1");
+        BigDecimal total = new BigDecimal("1");
 
-        // for (long i = num; i > 1; i--)
-        // {
-        //     total = total.multiply(BigInteger.valueOf(i));
-        // }
+        for (long i = num; i > 1; i--)
+        {
+            total = total.multiply(BigDecimal.valueOf(i));
+        }
 
-        // return total;
+        return total;
 
-        return (num < 1) ? BigInteger.ONE : BigInteger.valueOf(num).multiply(fatorial(num - 1));
+        // return (num < 1) ? BigInteger.ONE : BigInteger.valueOf(num).multiply(fatorial(num - 1));
     }
 
     public static BigInteger fibonacci(long num)

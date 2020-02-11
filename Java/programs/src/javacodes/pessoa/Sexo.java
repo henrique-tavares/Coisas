@@ -2,7 +2,17 @@ package javacodes.pessoa;
 
 public enum Sexo
 {
-    masculino,
-    feminino,
-    outro;
+    MASCULINO('M'), FEMININO('F'), OUTRO('O');
+
+    private char valor;
+
+    private Sexo(char valor)
+    {
+        this.valor = valor;
+    }
+
+    public char getValor()
+    {
+        return valor;
+    }
 }

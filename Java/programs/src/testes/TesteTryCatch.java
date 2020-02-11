@@ -1,3 +1,5 @@
+package testes;
+
 public class TesteTryCatch
 {
     public static void main(String[] args)
