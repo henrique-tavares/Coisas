@@ -1,6 +1,6 @@
 package javacodes.figuras_geometricas;
 
-public class Triangulo extends Figura2D implements DimensaoSuperficial
+public class Triangulo extends Figura2D
 {
     private double base;
     private double altura;

@@ -2,6 +2,7 @@ package javacodes.theads.testes;
 
 import javacodes.theads.ThreadSoma;
 
+@SuppressWarnings("unused")
 public class Teste03
 {
     public static void main(String[] args)

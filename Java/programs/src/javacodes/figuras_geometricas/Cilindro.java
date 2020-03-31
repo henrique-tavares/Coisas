@@ -1,6 +1,6 @@
 package javacodes.figuras_geometricas;
 
-public class Cilindro extends Figura3D implements DimensaoVolumetrica
+public class Cilindro extends Figura3D
 {
     private double raio;
     private double altura;

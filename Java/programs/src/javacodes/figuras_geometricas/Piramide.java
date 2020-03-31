@@ -1,6 +1,6 @@
 package javacodes.figuras_geometricas;
 
-public class Piramide extends Figura3D implements DimensaoVolumetrica
+public class Piramide extends Figura3D
 {
     private double lado;
     private double altura;

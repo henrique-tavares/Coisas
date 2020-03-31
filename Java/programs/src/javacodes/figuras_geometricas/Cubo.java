@@ -1,6 +1,6 @@
 package javacodes.figuras_geometricas;
 
-public class Cubo extends Figura3D implements DimensaoVolumetrica
+public class Cubo extends Figura3D
 {
     private double lado;
 

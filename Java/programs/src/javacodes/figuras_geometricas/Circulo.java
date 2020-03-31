@@ -1,6 +1,6 @@
 package javacodes.figuras_geometricas;
 
-public class Circulo extends Figura2D implements DimensaoSuperficial
+public class Circulo extends Figura2D
 {
     private double raio;
 
