@@ -54,7 +54,7 @@ public:
 		}
 	}
 
-	T at(int index)
+	T& operator[](int index)
 	{
 		if (this->empty())
 		{

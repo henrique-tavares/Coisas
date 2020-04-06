@@ -37,10 +37,12 @@ int main()
 
 	cout << endl;
 
-	cout << "l1[0] = " << l1.at(0) << endl;
-	cout << "l1[1] = " << l1.at(1) << endl;
-	cout << "l1[2] = " << l1.at(2) << endl;
-	cout << "l1[3] = " << l1.at(3) << endl;
+	l1[0] = 5;
+
+	cout << "l1[0] = " << l1[0] << endl;
+	cout << "l1[1] = " << l1[1] << endl;
+	cout << "l1[2] = " << l1[2] << endl;
+	cout << "l1[3] = " << l1[3] << endl;
 
 	cout << endl;
 
