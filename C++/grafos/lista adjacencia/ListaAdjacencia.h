@@ -1,7 +1,10 @@
+#ifndef __LISTA_ADJACENCIA_H__
+#define __LISTA_ADJACENCIA_H__
+
 #include <iostream>
-#include <vector>
 #include <set>
 #include <map>
+#include <algorithm>
 
 using namespace std;
 
@@ -17,14 +20,14 @@ public:
 		this->vertices = map<T, set<T>>();
 	}
 
-	void addVertice(T id)
+	void addVertice(T vertice)
 	{
-		if (this->vertices.find(id) != this->vertices.end())
+		if (this->vertices.find(vertice) != this->vertices.end())
 		{
 			throw invalid_argument("Vértice existente!");
 		}
 
-		this->vertices[id] = set<T>();
+		this->vertices[vertice] = set<T>();
 	}
 
 	void addAresta(T orig, T dest)
@@ -47,6 +50,26 @@ public:
 		return (this->vertices.at(orig).find(dest) != this->vertices.at(orig).end()) ? true : false;
 	}
 
+	int getGrauSaida(T vertice)
+	{
+		if (this->vertices.find(vertice) == this->vertices.end())
+		{
+			throw invalid_argument("Vértice inexistente!");
+		}
+
+		return this->vertices.at(vertice).size();
+	}
+
+	void dfs(T, int = 0);
+
+	void bfs(T);
+
+	bool temCiclo();
+
+private:
+	bool dfsCiclo(T);
+
+public:
 	friend ostream& operator<<(ostream &out, const Grafo<T> &grafo)
 	{
 		out << "{";
@@ -59,10 +82,17 @@ public:
 
 			for (auto &it2 : it.second)
 			{
-				cout << it2 << " ";
+				if (it2 == *it.second.begin())
+				{
+					cout << it2;
+				}
+				else
+				{
+					cout << ", " << it2;
+				}
 			}
 
-			out << "] ";
+			out << " ]";
 		}
 
 		out << "\n}";
@@ -71,36 +101,4 @@ public:
 	}
 };
 
-int main()
-{
-	Grafo<int> g = Grafo<int>();
-
-	g.addVertice(0);
-	g.addVertice(5);
-	g.addVertice(15);
-	g.addVertice(56);
-	g.addVertice(-8);
-
-	g.addAresta(0, 5);
-	g.addAresta(0, 15);
-	g.addAresta(0, -8);
-
-	g.addAresta(5, 0);
-	g.addAresta(5, 56);
-	g.addAresta(5, -8);
-
-	g.addAresta(56, 15);
-	g.addAresta(56, 0);
-
-	g.addAresta(15, 5);
-	g.addAresta(15, -8);
-
-	g.addAresta(-8, 0);
-	g.addAresta(-8, 5);
-	g.addAresta(-8, 15);
-	g.addAresta(-8, 56);
-
-	cout << g << endl;
-
-	return 0;
-}
+#endif
