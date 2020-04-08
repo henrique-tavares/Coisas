@@ -1,6 +1,6 @@
-package pilha_estatica.exercicios;
+package estatico.pilha.exercicios;
 
-import pilha_estatica.Pilha;
+import estatico.pilha.Pilha;
 
 public class Exer07
 {

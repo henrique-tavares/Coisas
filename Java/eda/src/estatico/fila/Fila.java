@@ -1,6 +1,6 @@
-package fila_estatica;
+package estatico.fila;
 
-import base.EstruturaEstatica;
+import estatico.base.EstruturaEstatica;
 
 public class Fila<T> extends EstruturaEstatica<T>
 {

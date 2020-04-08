@@ -1,4 +1,4 @@
-package pilha_estatica;
+package estatico.pilha;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package fila_estatica;
+package estatico.fila;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

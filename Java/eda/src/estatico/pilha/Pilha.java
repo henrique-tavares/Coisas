@@ -1,6 +1,6 @@
-package pilha_estatica;
+package estatico.pilha;
 
-import base.EstruturaEstatica;
+import estatico.base.EstruturaEstatica;
 
 public class Pilha<T> extends EstruturaEstatica<T>
 {

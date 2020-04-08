@@ -1,4 +1,4 @@
-package pilha_estatica;
+package estatico.pilha;
 
 public class Teste
 {

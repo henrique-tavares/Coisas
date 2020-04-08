@@ -1,4 +1,4 @@
-package pilha_estatica.exercicios;
+package estatico.pilha.exercicios;
 
 import java.util.Scanner;
 import java.util.Stack;

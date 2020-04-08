@@ -1,6 +1,6 @@
-package vetor;
+package estatico.vetor;
 
-import base.EstruturaEstatica;
+import estatico.base.EstruturaEstatica;
 
 public class Vetor<T> extends EstruturaEstatica<T>
 {

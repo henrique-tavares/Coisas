@@ -1,8 +1,8 @@
-package pilha_estatica.exercicios;
+package estatico.pilha.exercicios;
 
 import java.util.Scanner;
 
-import pilha_estatica.Pilha;
+import estatico.pilha.Pilha;
 
 public class Exer01
 {

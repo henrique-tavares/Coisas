@@ -1,4 +1,4 @@
-package fila_estatica;
+package estatico.fila;
 
 @SuppressWarnings("unchecked")
 public class FilaPrioridade<T> extends Fila<T>

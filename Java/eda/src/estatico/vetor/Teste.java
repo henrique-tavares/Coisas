@@ -1,4 +1,4 @@
-package vetor;
+package estatico.vetor;
 
 public class Teste
 {

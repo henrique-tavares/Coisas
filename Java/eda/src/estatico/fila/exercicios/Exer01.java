@@ -1,6 +1,6 @@
-package fila_estatica.exercicios;
+package estatico.fila.exercicios;
 
-import fila_estatica.Fila;
+import estatico.fila.Fila;
 
 public class Exer01
 {

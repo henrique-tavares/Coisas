@@ -1,4 +1,4 @@
-package fila_estatica;
+package estatico.fila;
 
 public class Teste
 {
