@@ -34,7 +34,5 @@ class Linguagem:
 						print(f'Movendo {path.join(root, file)} para {path.join(folder, file)} ...', end=' ')
 						move(path.join(root, file), path.join(folder, file))
 						print('pronto')
-
-
-cpp = Linguagem("C++", '.cpp', '.h')
-python.organize('./C++/algoritimos')
+		
+		print()
