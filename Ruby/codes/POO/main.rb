@@ -1,4 +1,4 @@
-require_relative "./carro_2.rb"
+require_relative "./carro_v2.rb"
 require_relative "./fiesta.rb"
 
 c1 = Carro.new("Fiat", "Palio")
