@@ -83,7 +83,7 @@ class String
     else
       left_padding = extra / 2
       right_padding = (extra+1)/2
-      (" " * left_padding) + self + (" " *right_padding)
+      (" " * left_padding) + self + (" " * right_padding)
     end
   end
 end
