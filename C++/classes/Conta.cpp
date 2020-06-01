@@ -63,7 +63,7 @@ bool Conta::sacar(double saque)
 	return true;
 }
 
-void foo(Conta& c)
+void foo(Conta &c)
 {
 	c.depositar(50);
 }
@@ -95,13 +95,12 @@ int main()
 	cout << "Número da conta: " << c2.getNumero() << endl
 		 << "Saldo: " << c2.getSaldo() << endl
 		 << endl;
-		
+
 	foo(c2);
 
 	cout << "Depositando..." << endl
-		<< "Saldo atual: " << c2.getSaldo() << endl
-		<< endl;
-
+		 << "Saldo atual: " << c2.getSaldo() << endl
+		 << endl;
 
 	return 0;
 }
