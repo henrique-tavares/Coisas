@@ -1,5 +1,3 @@
-teste = 9
-
 eval("puts 'sssasss ' + teste.to_s")
 
 atr = "opa"
