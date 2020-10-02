@@ -1,3 +1,4 @@
 .tmp.drivedownload
 .vscode
 *.class
+__pycache__/
