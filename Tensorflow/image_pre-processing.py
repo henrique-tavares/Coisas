@@ -1,5 +1,5 @@
 from os import path
-from skimage import io, transform, color, exposure, util, filters, morphology, segmentation
+from skimage import io, transform, color, exposure, util, filters, morphology, segmentation, feature
 import numpy as np
 from matplotlib import pyplot as plt
 import cv2
@@ -17,20 +17,20 @@ cropped_img = exposure.adjust_gamma(cropped_img)
 cropped_img = exposure.rescale_intensity(cropped_img)
 cropped_img = filters.median(cropped_img)
 
-seed = np.copy(cropped_img)
-seed[1:-1, 1:-1] = cropped_img.max()
-mask = cropped_img
+# seed = np.copy(cropped_img)
+# seed[1:-1, 1:-1] = cropped_img.max()
+# mask = cropped_img
 
-eroded_color = morphology.reconstruction(seed, mask, method="erosion")
+# eroded_color = morphology.reconstruction(seed, mask, method="erosion")
 
-no_bg_color_img = eroded_color - cropped_img
-inv_no_bg_color_img = util.invert(no_bg_color_img)
+# no_bg_color_img = eroded_color - cropped_img
+# inv_no_bg_color_img = util.invert(no_bg_color_img)
 
-no_bg_color_img = exposure.rescale_intensity(no_bg_color_img)
-no_bg_color_img = exposure.equalize_adapthist(no_bg_color_img)
+# no_bg_color_img = exposure.rescale_intensity(no_bg_color_img)
+# no_bg_color_img = exposure.equalize_adapthist(no_bg_color_img)
 
-inv_no_bg_color_img = exposure.rescale_intensity(inv_no_bg_color_img)
-inv_no_bg_color_img = exposure.equalize_adapthist(inv_no_bg_color_img)
+# inv_no_bg_color_img = exposure.rescale_intensity(inv_no_bg_color_img)
+# inv_no_bg_color_img = exposure.equalize_adapthist(inv_no_bg_color_img)
 
 grayscale_img = color.rgb2gray(cropped_img)
 
@@ -41,12 +41,11 @@ mask = grayscale_img
 eroded = morphology.reconstruction(seed, mask, method="erosion")
 
 no_bg_img = grayscale_img - eroded
-inv_no_bg_img = util.invert(no_bg_img)
 
 no_bg_img = exposure.rescale_intensity(no_bg_img)
 
-inv_no_bg_img = exposure.rescale_intensity(inv_no_bg_img)
-inv_no_bg_img = exposure.equalize_adapthist(inv_no_bg_img)
+# inv_no_bg_img = util.invert(no_bg_img)
+# inv_no_bg_img = exposure.equalize_adapthist(inv_no_bg_img)
 
 threshold = filters.threshold_yen(no_bg_img)
 kernel = np.ones((5, 5), np.uint8)
@@ -72,39 +71,54 @@ new_img = exposure.equalize_adapthist(new_img)
 
 new_gray_img = color.rgb2gray(new_img)
 
-eroding = cv2.erode(mask2, kernel, iterations=5)
+eroding = cv2.erode(mask2, kernel, iterations=6)
 
 new_img_eroded = cropped_img * eroding[:, :, np.newaxis]
+new_img_eroded = exposure.adjust_gamma(new_img_eroded)
 new_img_eroded = exposure.rescale_intensity(new_img_eroded)
 new_img_eroded = exposure.equalize_adapthist(new_img_eroded)
 
 new_gray_img_eroded = color.rgb2gray(new_img_eroded)
 
-fig, axes = plt.subplots(2, 4)
+pixel_values = filters.median(new_img_eroded)
+pixel_values = util.img_as_float32(pixel_values)
+pixel_values = pixel_values.reshape((-1, 3))
+
+k = 2
+_, labels, centers = cv2.kmeans(
+    pixel_values, k, None, (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 100, 0.2), 15, cv2.KMEANS_RANDOM_CENTERS
+)
+
+segmented_image = centers[labels.flatten()]
+segmented_image = segmented_image.reshape(new_img_eroded.shape)
+segmented_image = util.img_as_ubyte(segmented_image)
+
+egded = filters.sobel(color.rgb2gray(segmented_image))
+egded = util.img_as_ubyte(egded)
+
+contours, _ = cv2.findContours(egded, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+
+contours_filtered = [contour for contour in contours if cv2.contourArea(contour) >= 100]
+
+contour_img = util.img_as_ubyte(np.copy(new_img_eroded))
+cv2.drawContours(contour_img, contours, -1, (255, 0, 0), 1)
+
+contour_filtered_img = util.img_as_ubyte(np.copy(new_img_eroded))
+cv2.drawContours(contour_filtered_img, contours_filtered, -1, (255, 0, 0), 1)
+
+fig, axes = plt.subplots(2, 2)
 ax = axes.flatten()
 
 ax[0].imshow(cropped_img)
 ax[0].set_axis_off()
 
-ax[1].imshow(grayscale_img, cmap="gray")
+ax[1].imshow(new_img_eroded)
 ax[1].set_axis_off()
 
-ax[2].imshow(mask2, cmap="gray")
+ax[2].imshow(contour_img)
 ax[2].set_axis_off()
 
-ax[3].imshow(eroding, cmap="gray")
+ax[3].imshow(contour_filtered_img)
 ax[3].set_axis_off()
-
-ax[4].imshow(new_img)
-ax[4].set_axis_off()
-
-ax[5].imshow(new_gray_img, cmap="gray")
-ax[5].set_axis_off()
-
-ax[6].imshow(new_img_eroded)
-ax[6].set_axis_off()
-
-ax[7].imshow(new_gray_img_eroded, cmap="gray")
-ax[7].set_axis_off()
 
 plt.show()
