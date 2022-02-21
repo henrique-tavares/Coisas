@@ -1,0 +1,3 @@
+- Partindo do código abaixo, ordene os []user por idade e sobrenome.
+    - https://play.golang.org/p/BVRZTdlUZ_
+- Os valores no campo Sayings devem ser ordenados tambem, e demonstrados de maneira esteticamente harmoniosa.

@@ -1,0 +1,2 @@
+- Utilizando iota, crie 4 constantes cujos valores sejam os próximos 4 anos. (ano atual: 2022)
+- Demonstre estes valores.

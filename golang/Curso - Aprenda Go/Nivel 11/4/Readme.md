@@ -1,0 +1,2 @@
+- Utilizando este código: https://play.golang.org/p/wlEM1tgfQD
+- ...use o struct sqrt.Error como valor do tipo erro.

@@ -1,0 +1,1 @@
+- Escreva um programa que coloque 100 números em um canal, retire os números do canal, e demonstre-os.

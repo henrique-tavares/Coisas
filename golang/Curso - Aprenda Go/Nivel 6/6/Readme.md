@@ -1,0 +1,1 @@
+- Crie e utilize uma função anônima.

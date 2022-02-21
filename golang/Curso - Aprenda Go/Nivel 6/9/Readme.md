@@ -1,0 +1,1 @@
+- Callback: passe uma função como argumento a outra função.

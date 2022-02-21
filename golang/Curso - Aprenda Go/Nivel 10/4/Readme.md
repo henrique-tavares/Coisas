@@ -1,0 +1,2 @@
+- Utilizando este código: https://play.golang.org/p/MvL6uamrJP
+- ...use um select statement para demonstrar os valores do canal.

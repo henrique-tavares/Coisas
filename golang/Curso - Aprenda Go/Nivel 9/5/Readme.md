@@ -1,0 +1,1 @@
+- Utilize atomic para consertar a condição de corrida do exercício #3.

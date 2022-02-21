@@ -1,0 +1,1 @@
+Exercícios feitos a partir do curso [Aprenda Go](https://github.com/vkorbes/aprendago)

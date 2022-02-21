@@ -1,0 +1,2 @@
+- Utilizando este código: https://play.golang.org/p/3W69TH4nON
+- ...remova o underscore e verifique e lide com o erro de maneira apropriada.
