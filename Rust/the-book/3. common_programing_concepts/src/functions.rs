@@ -1,4 +1,4 @@
-fn main() {
+pub fn exec() {
     my_function();
 
     let a = sum(11, 22);

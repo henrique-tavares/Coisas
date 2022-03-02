@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "functions"
+name = "commom_programing_concepts"
 version = "0.1.0"

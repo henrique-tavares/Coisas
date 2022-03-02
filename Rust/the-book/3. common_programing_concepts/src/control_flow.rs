@@ -1,4 +1,4 @@
-fn main() {
+pub fn exec() {
     // IF Statements
     let number = 5;
 

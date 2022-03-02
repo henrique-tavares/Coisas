@@ -1,4 +1,4 @@
-fn main() {
+pub fn exec() {
     // Scalar Data Types
 
     // Integers (defalut: i32)
