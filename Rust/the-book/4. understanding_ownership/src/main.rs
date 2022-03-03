@@ -92,9 +92,9 @@ fn change(some_string: &mut String) {
     some_string.push_str(", world");
 }
 
-fn first_word(s: &String) -> &str {
-    for (i, c) in s.chars().enumerate() {
-        if c == ' ' {
+fn first_word(s: &str) -> &str {
+    for (i, b) in s.bytes().enumerate() {
+        if b == b' ' {
             return &s[0..i];
         }
     }
