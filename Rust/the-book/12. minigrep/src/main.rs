@@ -4,9 +4,7 @@ use colored::Colorize;
 use minigrep::Config;
 
 fn main() {
-    let args = env::args().collect::<Vec<String>>();
-
-    let config = Config::new(&args).unwrap_or_else(|err| {
+    let config = Config::new(env::args()).unwrap_or_else(|err| {
         eprintln!("[{}] {}", "ERROR".red(), err);
         process::exit(1);
     });

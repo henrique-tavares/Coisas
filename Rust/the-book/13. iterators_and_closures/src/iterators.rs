@@ -1,3 +1,5 @@
+#![allow(dead_code, unused_imports)]
+
 pub fn exec() {
     let v1 = vec![1, 2, 3];
 

@@ -1,11 +1,16 @@
-use std::{env, error::Error, fs};
+use std::{
+    env::{self, Args},
+    error::Error,
+    fs,
+};
 
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
-    let contents = fs::read_to_string(config.filename)?;
+    let contents = fs::read_to_string(&config.filename)?;
 
-    let queried_lines = match config.case_sensitive {
-        true => search(config.query, &contents),
-        false => search_case_insensitive(config.query, &contents),
+    let queried_lines = if config.case_sensitive {
+        search(&config.query, &contents)
+    } else {
+        search_case_insensitive(&config.query, &contents)
     };
 
     if queried_lines.is_empty() {
@@ -25,8 +30,8 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     contents
         .lines()
-        .filter(|&line| line.contains(query))
-        .collect::<Vec<&str>>()
+        .filter(|line| line.contains(query))
+        .collect()
 }
 
 pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
@@ -34,25 +39,29 @@ pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a st
 
     contents
         .lines()
-        .filter(|&line| line.to_lowercase().contains(&query_lowercase))
-        .collect::<Vec<&str>>()
+        .filter(|line| line.to_lowercase().contains(&query_lowercase))
+        .collect()
 }
 
-pub struct Config<'a> {
-    pub query: &'a String,
-    pub filename: &'a String,
+pub struct Config {
+    pub query: String,
+    pub filename: String,
     pub case_sensitive: bool,
 }
 
-impl<'a> Config<'a> {
-    pub fn new(args: &'a [String]) -> Result<Self, &str> {
-        let query = args
-            .get(1)
-            .ok_or_else(|| "Missing first argument: The searching term")?;
+impl Config {
+    pub fn new(mut args: Args) -> Result<Self, &'static str> {
+        args.next();
 
-        let filename = args
-            .get(2)
-            .ok_or_else(|| "Missing second argument: The file path")?;
+        let query = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Missing first argument: The searching term"),
+        };
+
+        let filename = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Missing second argument: The file path"),
+        };
 
         let case_sensitive = env::var("CASE_INSENSITIVE").is_err();
 
