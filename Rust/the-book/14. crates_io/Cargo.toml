@@ -1,0 +1,16 @@
+[package]
+name = "henrique_art_test"
+version = "0.1.0"
+edition = "2018"
+description = "A library for modeling artistic concepts."
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
