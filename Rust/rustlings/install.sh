@@ -30,6 +30,22 @@ else
     exit 1
 fi
 
+# Look up python installations, starting with 3 with a fallback of 2
+if [ -x "$(command -v python3)" ]
+then
+    PY="$(command -v python3)"
+elif [ -x "$(command -v python)" ]
+then
+    PY="$(command -v python)"
+elif [ -x "$(command -v python2)" ]
+then
+    PY="$(command -v python2)"
+else
+    echo "ERROR: No working python installation was found"
+    echo "Please install python and add it to the PATH variable"
+    exit 1
+fi
+
 # Function that compares two versions strings v1 and v2 given in arguments (e.g 1.31 and 1.33.0).
 # Returns 1 if v1 > v2, 0 if v1 == v2, 2 if v1 < v2.
 function vercomp() {
@@ -71,7 +87,7 @@ function vercomp() {
 }
 
 RustVersion=$(rustc --version | cut -d " " -f 2)
-MinRustVersion=1.31
+MinRustVersion=1.39
 vercomp $RustVersion $MinRustVersion
 if [ $? -eq 2 ]
 then
@@ -86,12 +102,30 @@ Path=${1:-rustlings/}
 echo "Cloning Rustlings at $Path..."
 git clone -q https://github.com/rust-lang/rustlings $Path
 
-Version=$(curl -s https://api.github.com/repos/rust-lang/rustlings/releases/latest | python -c "import json,sys;obj=json.load(sys.stdin);print(obj['tag_name']);")
+cd $Path
+
+Version=$(curl -s https://api.github.com/repos/rust-lang/rustlings/releases/latest | ${PY} -c "import json,sys;obj=json.load(sys.stdin);print(obj['tag_name']);")
 CargoBin="${CARGO_HOME:-$HOME/.cargo}/bin"
 
+if [[ -z ${Version} ]]
+then
+    echo "The latest tag version could not be fetched remotely."
+    echo "Using the local git repository..."
+    Version=$(ls -tr .git/refs/tags/ | tail -1)
+    if [[ -z ${Version}  ]]
+    then
+        echo "No valid tag version found"
+        echo "Rustlings will be installed using the main branch"
+        Version="main"
+    else
+        Version="tags/${Version}"
+    fi
+else
+    Version="tags/${Version}"
+fi
+
 echo "Checking out version $Version..."
-cd $Path
-git checkout -q tags/$Version
+git checkout -q ${Version}
 
 echo "Installing the 'rustlings' executable..."
 cargo install --force --path .

@@ -1,20 +1,17 @@
 // iterators4.rs
 
+// I AM NOT DONE
+
 pub fn factorial(num: u64) -> u64 {
-    // Complete this function to return factorial of num
+    // Complete this function to return the factorial of num
     // Do not use:
     // - return
-    // For extra fun don't use:
+    // Try not to use:
     // - imperative style loops (for, while)
     // - additional variables
-    // For the most fun don't use:
+    // For an extra challenge, don't use:
     // - recursion
     // Execute `rustlings hint iterators4` for hints.
-
-    (1..=num)
-        .collect::<Vec<_>>()
-        .iter()
-        .fold(1, |total, n| total * n)
 }
 
 #[cfg(test)]
